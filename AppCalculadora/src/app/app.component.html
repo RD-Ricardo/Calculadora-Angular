@@ -1,0 +1,42 @@
+
+<div class="template">
+  <div class="calculadora">
+    <mat-card class="inputResp">{{resultado}}</mat-card>
+    <table>
+        <tr>
+          <th><button mat-fab color="warn" (click)="limpar()">AC</button></th>
+          <th><button mat-fab color="warn" (click)="apagar()"><</button></th>
+          <th><button mat-fab color="warn" (click)="btn('&')">%</button></th>
+          <th><button mat-fab color="accent">/</button></th>
+        </tr>
+
+        <tr>
+          <th><button mat-fab color="primary"(click)="btn('7')">7</button></th>
+          <th><button mat-fab color="primary"(click)="btn('8')">8</button></th>
+          <th><button mat-fab color="primary"(click)="btn('9')">9</button></th>
+          <th><button mat-fab color="accent"(click)="btn('*')">X</button></th>
+        </tr>
+
+        <tr>
+          <th><button mat-fab color="primary"(click)="btn('4')">4</button></th>
+          <th><button mat-fab color="primary"(click)="btn('5')" >5</button></th>
+          <th><button mat-fab color="primary"(click)="btn('6')">6</button></th>
+          <th><button mat-fab color="accent" (click)="btn('-')">-</button></th>
+        </tr>
+
+        <tr>
+          <th><button mat-fab color="primary"(click)="btn('1')">1</button></th>
+          <th><button mat-fab color="primary"(click)="btn('2')">2</button></th>
+          <th><button mat-fab color="primary"(click)="btn('3')">3</button></th>
+          <th><button mat-fab color="accent"(click)="btn('+')" >+</button></th>
+        </tr>
+
+        <tr>
+         <th colspan="2"><button class="btnZero"mat-fab color="primary" (click)="btn('0')">0</button></th>
+          <th><button mat-fab color="primary" (click)="btn('.')">.</button></th>
+          <th><button mat-fab color="accent" (click)="calcular()">=</button>
+          </th>
+        </tr>
+    </table>
+  </div>
+</div>
